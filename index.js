@@ -26,7 +26,16 @@ const animals = [
  * getTotalCount(animals); //> 28
  * getTotalCount([]); //> 0 // returns 0 if the input array is empty
  */
-function getTotalCount(animals) {}
+function getTotalCount(animals) {
+  let animalsCount = "animals";
+  for(i = 0; i < animals[i].count.length; i++){
+    animalsCount += animals[i].count
+    
+  
+  }
+// // // I know I'm doing something wrong here because I not calling the object at key count
+  return animalsCount
+}
 
 /**
  * FUNCTION DESCRIPTION
@@ -40,7 +49,15 @@ function getTotalCount(animals) {}
  * getAllKinds(animals); //> ["Pig", "Cow", "Chicken", "Horse", "Dog", "Cat"]
  * getAllKinds([]); //> [] // returns empty array if input array is empty
  */
-function getAllKinds(animals) {}
+function getAllKinds(animals) {
+  let allAnimalKind = "animals";
+  for(i =0; i < animals.length; i++){
+    allAnimalKind
+
+// // // I am trying to access the animals property with bracket notation I getting undefined in console
+  }
+return allAnimalKind
+}
 
 /**
  * FUNCTION DESCRIPTION
@@ -59,7 +76,15 @@ function getAllKinds(animals) {}
   ];
  * filterByCountMinimum([], 3); //> [] // returns empty array if input array is empty
  */
-function filterByCountMinimum(animals, minimum) {}
+function filterByCountMinimum(animals, minimum) {
+  let animalsMin = "animals";
+  for (i = 0; i < animals.length; i++){
+    if(animals >= minimum){
+      
+    }
+    return animalsMin
+  }
+}
 
 /**
  * FUNCTION DESCRIPTION
@@ -73,7 +98,15 @@ function filterByCountMinimum(animals, minimum) {}
  * getMostCommonAnimal(animals); //> { kind: "Chicken", count: 11 }
  * getMostCommonAnimal([]); //> null // returns null if the input is empty
  */
-function getMostCommonAnimal(animals) {}
+function getMostCommonAnimal(animals) {
+  let highCount = animals;
+  for(i = 0; i < animals.length; i++){
+    if(animals.count){
+      
+    }
+  }
+  return highCount
+}
 
 // Do not change anything below this line.
 module.exports = {
